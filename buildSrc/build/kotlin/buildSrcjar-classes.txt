@@ -1,0 +1,1 @@
+/Users/tajiri-munenori/Android/RecyclerViewEpoxy/buildSrc/build/classes/kotlin/main/Libs$Versions.class:/Users/tajiri-munenori/Android/RecyclerViewEpoxy/buildSrc/build/classes/kotlin/main/Libs.class
