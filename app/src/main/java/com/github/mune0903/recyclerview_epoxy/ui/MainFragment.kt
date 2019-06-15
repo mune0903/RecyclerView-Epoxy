@@ -16,7 +16,9 @@ class MainFragment : Fragment() {
 
     private lateinit var binding: FragmentMainBinding
 
-    private val viewModelFactory = ViewModelFactory()
+    private val viewModelFactory: ViewModelFactory by lazy {
+        ViewModelFactory()
+    }
 
     private val viewModel: MainViewModel by lazy {
         ViewModelProviders.of(this, viewModelFactory).get(MainViewModel::class.java)
@@ -57,6 +59,7 @@ class MainFragment : Fragment() {
         binding.recyclerView.apply {
             setHasFixedSize(true)
             layoutManager = LinearLayoutManager(requireContext())
+            adapter = controller.adapter
         }
     }
 
